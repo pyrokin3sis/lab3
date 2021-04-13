@@ -1,0 +1,33 @@
+#include <iostream>
+#include <cstdlib>
+#include <cstring>
+using namespace std;
+
+/*Variant 10 - Дан массив символов. Посчитать сколько в нём встречается различных символов.*/
+
+int main()
+{
+    char str[255];
+    int cnt=0,
+    cnt1=0;
+    
+    cout << "Input your symbols:" << endl;
+    cin.getline(str,255);
+    
+    for(int i = 0; i < strlen(str); i++)
+    {
+        cnt1 = 0;
+        for(int j=0; j < strlen(str); j++)
+        {
+            if(str[i] == str[j])
+            {
+                cnt1++;
+            }
+        }
+      if(cnt1 == 1)
+      { 
+        cout << "Differing symbols :" << str[i] << endl;
+          cnt++;
+      }
+    }
+}  
