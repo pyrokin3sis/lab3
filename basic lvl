@@ -3,7 +3,7 @@
 #include <cstring>
 using namespace std;
 
-/*Variant 10 - Дани массив символов. Посчитать сколько в нём букв r, k, t.*/
+/*Variant 10 - Дан массив символов. Посчитать сколько в нём букв r, k, t.*/
 
 int main ()
 {
